@@ -703,8 +703,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Info Cards */
 .dashboard .info-card {
-  width: 500px;
-  height: 300px;
+  padding-bottom: 10px;
 }
 .dashboard .info-card h6 {
   font-size: 28px;
