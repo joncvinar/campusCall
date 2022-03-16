@@ -1,0 +1,169 @@
+[08-Dec-2021 17:50:41 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/cvinarj1/public_html/Class Project/config.php on line 8
+[08-Dec-2021 18:09:41 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'cvinarj1_cvinarj1'@'localhost' to database 'cvinarj1_users' in /home/cvinarj1/public_html/Class Project/config.php on line 8
+[08-Dec-2021 18:10:14 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'cvinarj1_cvinarj1'@'localhost' to database 'cvinarj1_jonthanautoworld' in /home/cvinarj1/public_html/Class Project/config.php on line 8
+[08-Dec-2021 18:10:29 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'cvinarj1_cvinarj1'@'localhost' to database 'cvinarj1_jonthanautoworld' in /home/cvinarj1/public_html/Class Project/config.php on line 8
+[08-Dec-2021 18:31:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function free() on bool in /home/cvinarj1/public_html/Class Project/aftermarketresults.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/cvinarj1/public_html/Class Project/aftermarketresults.php on line 49
+[08-Dec-2021 18:31:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function free() on bool in /home/cvinarj1/public_html/Class Project/aftermarketresults.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/cvinarj1/public_html/Class Project/aftermarketresults.php on line 49
+[10-Dec-2021 14:26:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function free() on bool in /home/cvinarj1/public_html/Class Project/aftermarketresults.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/cvinarj1/public_html/Class Project/aftermarketresults.php on line 49
+[10-Dec-2021 14:26:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function free() on bool in /home/cvinarj1/public_html/Class Project/aftermarketresults.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/cvinarj1/public_html/Class Project/aftermarketresults.php on line 49
+[10-Dec-2021 14:26:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function free() on bool in /home/cvinarj1/public_html/Class Project/aftermarketresults.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/cvinarj1/public_html/Class Project/aftermarketresults.php on line 49
+[10-Dec-2021 14:26:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function free() on bool in /home/cvinarj1/public_html/Class Project/aftermarketresults.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/cvinarj1/public_html/Class Project/aftermarketresults.php on line 49
+[10-Dec-2021 16:09:50 UTC] PHP Warning:  include(db.php): failed to open stream: No such file or directory in /home/cvinarj1/public_html/Class Project/index.php on line 3
+[10-Dec-2021 16:09:50 UTC] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/cvinarj1/public_html/Class Project/index.php on line 3
+[10-Dec-2021 16:09:52 UTC] PHP Warning:  include(db.php): failed to open stream: No such file or directory in /home/cvinarj1/public_html/Class Project/index.php on line 3
+[10-Dec-2021 16:09:52 UTC] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/cvinarj1/public_html/Class Project/index.php on line 3
+[10-Dec-2021 16:09:54 UTC] PHP Warning:  include(db.php): failed to open stream: No such file or directory in /home/cvinarj1/public_html/Class Project/index.php on line 3
+[10-Dec-2021 16:09:54 UTC] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/cvinarj1/public_html/Class Project/index.php on line 3
+[10-Dec-2021 18:46:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function free() on bool in /home/cvinarj1/public_html/Class Project/results.php:61
+Stack trace:
+#0 {main}
+  thrown in /home/cvinarj1/public_html/Class Project/results.php on line 61
+[10-Dec-2021 18:46:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function free() on bool in /home/cvinarj1/public_html/Class Project/results.php:61
+Stack trace:
+#0 {main}
+  thrown in /home/cvinarj1/public_html/Class Project/results.php on line 61
+[10-Dec-2021 18:47:03 UTC] PHP Fatal error:  Uncaught Error: Call to a member function free() on bool in /home/cvinarj1/public_html/Class Project/results.php:63
+Stack trace:
+#0 {main}
+  thrown in /home/cvinarj1/public_html/Class Project/results.php on line 63
+[10-Dec-2021 18:47:59 UTC] PHP Fatal error:  Uncaught Error: Call to a member function free() on bool in /home/cvinarj1/public_html/Class Project/results.php:63
+Stack trace:
+#0 {main}
+  thrown in /home/cvinarj1/public_html/Class Project/results.php on line 63
+[10-Dec-2021 18:48:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function free() on bool in /home/cvinarj1/public_html/Class Project/results.php:63
+Stack trace:
+#0 {main}
+  thrown in /home/cvinarj1/public_html/Class Project/results.php on line 63
+[10-Dec-2021 18:49:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function free() on bool in /home/cvinarj1/public_html/Class Project/results.php:62
+Stack trace:
+#0 {main}
+  thrown in /home/cvinarj1/public_html/Class Project/results.php on line 62
+[10-Dec-2021 18:49:28 UTC] PHP Fatal error:  Uncaught Error: Call to a member function free() on bool in /home/cvinarj1/public_html/Class Project/results.php:62
+Stack trace:
+#0 {main}
+  thrown in /home/cvinarj1/public_html/Class Project/results.php on line 62
+[10-Dec-2021 18:52:39 UTC] PHP Fatal error:  Uncaught Error: Call to a member function free() on bool in /home/cvinarj1/public_html/Class Project/results.php:62
+Stack trace:
+#0 {main}
+  thrown in /home/cvinarj1/public_html/Class Project/results.php on line 62
+[10-Dec-2021 18:53:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function free() on bool in /home/cvinarj1/public_html/Class Project/results.php:62
+Stack trace:
+#0 {main}
+  thrown in /home/cvinarj1/public_html/Class Project/results.php on line 62
+[10-Dec-2021 18:54:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function free() on bool in /home/cvinarj1/public_html/Class Project/results.php:62
+Stack trace:
+#0 {main}
+  thrown in /home/cvinarj1/public_html/Class Project/results.php on line 62
+[10-Dec-2021 18:55:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function free() on bool in /home/cvinarj1/public_html/Class Project/results.php:63
+Stack trace:
+#0 {main}
+  thrown in /home/cvinarj1/public_html/Class Project/results.php on line 63
+[12-Dec-2021 19:28:07 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/cvinarj1/public_html/Class Project/results.php on line 140
+[12-Dec-2021 19:28:07 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cvinarj1/public_html/Class Project/results.php on line 141
+[12-Dec-2021 19:29:02 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/cvinarj1/public_html/Class Project/results.php on line 140
+[12-Dec-2021 19:29:02 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cvinarj1/public_html/Class Project/results.php on line 141
+[12-Dec-2021 19:29:25 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/cvinarj1/public_html/Class Project/results.php on line 140
+[12-Dec-2021 19:29:25 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cvinarj1/public_html/Class Project/results.php on line 141
+[12-Dec-2021 19:30:18 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/cvinarj1/public_html/Class Project/results.php on line 140
+[12-Dec-2021 19:30:18 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cvinarj1/public_html/Class Project/results.php on line 141
+[12-Dec-2021 19:31:26 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/cvinarj1/public_html/Class Project/results.php on line 87
+[12-Dec-2021 19:31:26 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cvinarj1/public_html/Class Project/results.php on line 88
+[12-Dec-2021 19:33:09 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/cvinarj1/public_html/Class Project/results.php on line 144
+[12-Dec-2021 19:33:09 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cvinarj1/public_html/Class Project/results.php on line 145
+[12-Dec-2021 19:33:14 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/cvinarj1/public_html/Class Project/results.php on line 144
+[12-Dec-2021 19:33:14 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/cvinarj1/public_html/Class Project/results.php on line 145
+[15-Dec-2021 17:30:19 UTC] PHP Warning:  password_verify() expects exactly 2 parameters, 1 given in /home/cvinarj1/public_html/Class Project/loginEmployee.php on line 57
+[15-Dec-2021 18:12:04 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home/cvinarj1/public_html/Class Project/editEmployee.php on line 3
+[15-Dec-2021 18:13:56 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home/cvinarj1/public_html/Class Project/editEmployee.php on line 3
+[15-Dec-2021 18:15:01 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home/cvinarj1/public_html/Class Project/editEmployee.php on line 3
+[15-Dec-2021 18:26:19 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home/cvinarj1/public_html/Class Project/editEmployee.php on line 3
+[15-Dec-2021 18:29:02 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home/cvinarj1/public_html/Class Project/editEmployee.php on line 3
+[15-Dec-2021 18:41:41 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home/cvinarj1/public_html/Class Project/removeEmployee.php on line 1
+[15-Dec-2021 21:15:02 UTC] PHP Warning:  require(includes/connection.php): failed to open stream: No such file or directory in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 3
+[15-Dec-2021 21:15:02 UTC] PHP Fatal error:  require(): Failed opening required 'includes/connection.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 3
+[15-Dec-2021 21:21:22 UTC] PHP Warning:  require(includes/connection.php): failed to open stream: No such file or directory in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 3
+[15-Dec-2021 21:21:22 UTC] PHP Fatal error:  require(): Failed opening required 'includes/connection.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 3
+[15-Dec-2021 21:21:30 UTC] PHP Warning:  require(includes/connection.php): failed to open stream: No such file or directory in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 3
+[15-Dec-2021 21:21:30 UTC] PHP Fatal error:  require(): Failed opening required 'includes/connection.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 3
+[15-Dec-2021 21:22:25 UTC] PHP Warning:  require(includes/config.php): failed to open stream: No such file or directory in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 3
+[15-Dec-2021 21:22:25 UTC] PHP Fatal error:  require(): Failed opening required 'includes/config.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 3
+[15-Dec-2021 21:22:50 UTC] PHP Warning:  require(includes/connection.php): failed to open stream: No such file or directory in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 3
+[15-Dec-2021 21:22:50 UTC] PHP Fatal error:  require(): Failed opening required 'includes/connection.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 3
+[15-Dec-2021 21:25:31 UTC] PHP Warning:  require(Vehicle.php): failed to open stream: No such file or directory in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 40
+[15-Dec-2021 21:25:31 UTC] PHP Fatal error:  require(): Failed opening required 'Vehicle.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 40
+[15-Dec-2021 21:26:31 UTC] PHP Warning:  require(Vehicle.php): failed to open stream: No such file or directory in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 40
+[15-Dec-2021 21:26:31 UTC] PHP Fatal error:  require(): Failed opening required 'Vehicle.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 40
+[15-Dec-2021 21:28:31 UTC] PHP Warning:  require(Vehicle.php): failed to open stream: No such file or directory in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 40
+[15-Dec-2021 21:28:31 UTC] PHP Fatal error:  require(): Failed opening required 'Vehicle.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 40
+[15-Dec-2021 21:28:47 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 6
+[15-Dec-2021 21:28:57 UTC] PHP Warning:  require(Vehicle.php): failed to open stream: No such file or directory in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 40
+[15-Dec-2021 21:28:57 UTC] PHP Fatal error:  require(): Failed opening required 'Vehicle.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 40
+[15-Dec-2021 21:31:18 UTC] PHP Warning:  require(Vehicle.php): failed to open stream: No such file or directory in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 40
+[15-Dec-2021 21:31:18 UTC] PHP Fatal error:  require(): Failed opening required 'Vehicle.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 40
+[15-Dec-2021 21:34:14 UTC] PHP Warning:  require(Vehicle.php): failed to open stream: No such file or directory in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 40
+[15-Dec-2021 21:34:14 UTC] PHP Fatal error:  require(): Failed opening required 'Vehicle.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 40
+[15-Dec-2021 21:34:52 UTC] PHP Warning:  require(Vehicle.php): failed to open stream: No such file or directory in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 40
+[15-Dec-2021 21:34:52 UTC] PHP Fatal error:  require(): Failed opening required 'Vehicle.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 40
+[15-Dec-2021 21:35:24 UTC] PHP Warning:  require(Vehicle.php): failed to open stream: No such file or directory in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 39
+[15-Dec-2021 21:35:24 UTC] PHP Fatal error:  require(): Failed opening required 'Vehicle.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 39
+[15-Dec-2021 22:01:42 UTC] PHP Warning:  require(Vehicle.php): failed to open stream: No such file or directory in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 39
+[15-Dec-2021 22:01:42 UTC] PHP Fatal error:  require(): Failed opening required 'Vehicle.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 39
+[15-Dec-2021 22:41:00 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/cvinarj1/public_html/Class Project/insertAftermarket.php on line 27
+[15-Dec-2021 22:41:39 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/cvinarj1/public_html/Class Project/insertAftermarket.php on line 27
+[15-Dec-2021 22:43:48 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/cvinarj1/public_html/Class Project/insertAftermarket.php on line 27
+[15-Dec-2021 22:43:57 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/cvinarj1/public_html/Class Project/insertAftermarket.php on line 27
+[15-Dec-2021 22:48:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function addslashesl() in /home/cvinarj1/public_html/Class Project/insertAftermarket.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/cvinarj1/public_html/Class Project/insertAftermarket.php on line 26
+[15-Dec-2021 22:48:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function addslashesl() in /home/cvinarj1/public_html/Class Project/insertAftermarket.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/cvinarj1/public_html/Class Project/insertAftermarket.php on line 26
+[15-Dec-2021 22:49:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function addslashesl() in /home/cvinarj1/public_html/Class Project/insertAftermarket.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/cvinarj1/public_html/Class Project/insertAftermarket.php on line 26
+[16-Dec-2021 00:04:53 UTC] PHP Warning:  require(Vehicle.php): failed to open stream: No such file or directory in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 39
+[16-Dec-2021 00:04:53 UTC] PHP Fatal error:  require(): Failed opening required 'Vehicle.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 39
+[16-Dec-2021 01:57:11 UTC] PHP Fatal error:  Uncaught Error: Call to a member function free() on bool in /home/cvinarj1/public_html/Class Project/aftermarketresults.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/cvinarj1/public_html/Class Project/aftermarketresults.php on line 49
+[17-Dec-2021 01:03:45 UTC] PHP Warning:  require(Vehicle.php): failed to open stream: No such file or directory in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 39
+[17-Dec-2021 01:03:45 UTC] PHP Fatal error:  require(): Failed opening required 'Vehicle.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 39
+[17-Dec-2021 01:57:55 UTC] PHP Warning:  require(Vehicle.php): failed to open stream: No such file or directory in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 39
+[17-Dec-2021 01:57:55 UTC] PHP Fatal error:  require(): Failed opening required 'Vehicle.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 39
+[17-Dec-2021 02:01:19 UTC] PHP Warning:  require(Vehicle.php): failed to open stream: No such file or directory in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 40
+[17-Dec-2021 02:01:19 UTC] PHP Fatal error:  require(): Failed opening required 'Vehicle.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 40
+[17-Dec-2021 02:43:57 UTC] PHP Warning:  require(Vehicle.php): failed to open stream: No such file or directory in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 40
+[17-Dec-2021 02:43:57 UTC] PHP Fatal error:  require(): Failed opening required 'Vehicle.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/cvinarj1/public_html/Class Project/shoppingCart.php on line 40
+[17-Dec-2021 02:44:57 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home/cvinarj1/public_html/Class Project/editEmployee.php on line 3
+[17-Dec-2021 02:45:14 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home/cvinarj1/public_html/Class Project/editEmployee.php on line 3
+[17-Dec-2021 02:45:36 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in /home/cvinarj1/public_html/Class Project/removeEmployee.php on line 1
+[17-Dec-2021 02:46:48 UTC] PHP Fatal error:  Uncaught Error: Call to a member function free() on bool in /home/cvinarj1/public_html/Class Project/aftermarketresults.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/cvinarj1/public_html/Class Project/aftermarketresults.php on line 49
+[17-Dec-2021 02:46:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function free() on bool in /home/cvinarj1/public_html/Class Project/aftermarketresults.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/cvinarj1/public_html/Class Project/aftermarketresults.php on line 49
