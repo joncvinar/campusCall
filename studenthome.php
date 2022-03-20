@@ -165,7 +165,11 @@ if (!isset($_SESSION['loggedin'])) {
                 <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
                 <div>
                   <h4>Maria Hudson</h4>
+<<<<<<< HEAD
+                  <p>Undecided text</p>
+=======
                   <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+>>>>>>> 19f5de8cf30f43e2af51a4a71e98d685a45c65ec
                   <p>4 hrs. ago</p>
                 </div>
               </a>
@@ -179,7 +183,11 @@ if (!isset($_SESSION['loggedin'])) {
                 <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
                 <div>
                   <h4>Anna Nelson</h4>
+<<<<<<< HEAD
+                  <p>Misc. Text</p>
+=======
                   <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+>>>>>>> 19f5de8cf30f43e2af51a4a71e98d685a45c65ec
                   <p>6 hrs. ago</p>
                 </div>
               </a>
@@ -193,7 +201,11 @@ if (!isset($_SESSION['loggedin'])) {
                 <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
                 <div>
                   <h4>David Muldon</h4>
+<<<<<<< HEAD
+                  <p> Misc. Text</p>
+=======
                   <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+>>>>>>> 19f5de8cf30f43e2af51a4a71e98d685a45c65ec
                   <p>8 hrs. ago</p>
                 </div>
               </a>
@@ -276,7 +288,11 @@ if (!isset($_SESSION['loggedin'])) {
   <ul class="sidebar-nav" id="sidebar-nav">
 
     <li class="nav-item">
+<<<<<<< HEAD
+      <a class="nav-link " href="studenthome.php">
+=======
       <a class="nav-link " href="index.html">
+>>>>>>> 19f5de8cf30f43e2af51a4a71e98d685a45c65ec
         <i class="bi bi-grid"></i>
         <span>Dashboard</span>
       </a>
@@ -370,6 +386,11 @@ if (!isset($_SESSION['loggedin'])) {
             <div class="col-xxl-4 col-md-6">
               <div class="card info-card sales-card">
 
+<<<<<<< HEAD
+                
+                <div class="card-body">
+                  <h5 class="card-title">Announcements today <span>| Today</span></h5>
+=======
                 <div class="filter">
                   <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
                   <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
@@ -385,6 +406,7 @@ if (!isset($_SESSION['loggedin'])) {
 
                 <div class="card-body">
                   <h5 class="card-title">Sales <span>| Today</span></h5>
+>>>>>>> 19f5de8cf30f43e2af51a4a71e98d685a45c65ec
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
@@ -409,6 +431,9 @@ if (!isset($_SESSION['loggedin'])) {
           <div class="card">
             <div class="filter">
               <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+<<<<<<< HEAD
+              
+=======
               <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                 <li class="dropdown-header text-start">
                   <h6>Filter</h6>
@@ -418,6 +443,7 @@ if (!isset($_SESSION['loggedin'])) {
                 <li><a class="dropdown-item" href="#">This Month</a></li>
                 <li><a class="dropdown-item" href="#">This Year</a></li>
               </ul>
+>>>>>>> 19f5de8cf30f43e2af51a4a71e98d685a45c65ec
             </div>
 
             <div class="card-body">
@@ -429,7 +455,11 @@ if (!isset($_SESSION['loggedin'])) {
                   <div class="activite-label">32 min</div>
                   <i class='bi bi-circle-fill activity-badge text-success align-self-start'></i>
                   <div class="activity-content">
+<<<<<<< HEAD
+                    This is another event! Placeholder for now <a href="#" class="fw-bold text-dark">A Link will be here to announcement redirect</a> 
+=======
                     Quia quae rerum <a href="#" class="fw-bold text-dark">explicabo officiis</a> beatae
+>>>>>>> 19f5de8cf30f43e2af51a4a71e98d685a45c65ec
                   </div>
                 </div><!-- End activity item-->
 
@@ -437,7 +467,11 @@ if (!isset($_SESSION['loggedin'])) {
                   <div class="activite-label">56 min</div>
                   <i class='bi bi-circle-fill activity-badge text-danger align-self-start'></i>
                   <div class="activity-content">
+<<<<<<< HEAD
+                    This is another Announcement! Placeholder for now
+=======
                     Voluptatem blanditiis blanditiis eveniet
+>>>>>>> 19f5de8cf30f43e2af51a4a71e98d685a45c65ec
                   </div>
                 </div><!-- End activity item-->
 
@@ -445,7 +479,11 @@ if (!isset($_SESSION['loggedin'])) {
                   <div class="activite-label">2 hrs</div>
                   <i class='bi bi-circle-fill activity-badge text-primary align-self-start'></i>
                   <div class="activity-content">
+<<<<<<< HEAD
+                    Another Announcement.
+=======
                     Voluptates corrupti molestias voluptatem
+>>>>>>> 19f5de8cf30f43e2af51a4a71e98d685a45c65ec
                   </div>
                 </div><!-- End activity item-->
 
@@ -453,7 +491,11 @@ if (!isset($_SESSION['loggedin'])) {
                   <div class="activite-label">1 day</div>
                   <i class='bi bi-circle-fill activity-badge text-info align-self-start'></i>
                   <div class="activity-content">
+<<<<<<< HEAD
+                    Another Announcement <a href="#" class="fw-bold text-dark">Link to assignment/announcement change</a> 
+=======
                     Tempore autem saepe <a href="#" class="fw-bold text-dark">occaecati voluptatem</a> tempore
+>>>>>>> 19f5de8cf30f43e2af51a4a71e98d685a45c65ec
                   </div>
                 </div><!-- End activity item-->
 
@@ -461,7 +503,11 @@ if (!isset($_SESSION['loggedin'])) {
                   <div class="activite-label">2 days</div>
                   <i class='bi bi-circle-fill activity-badge text-warning align-self-start'></i>
                   <div class="activity-content">
+<<<<<<< HEAD
+                    Another Announcement
+=======
                     Est sit eum reiciendis exercitationem
+>>>>>>> 19f5de8cf30f43e2af51a4a71e98d685a45c65ec
                   </div>
                 </div><!-- End activity item-->
 
@@ -469,7 +515,11 @@ if (!isset($_SESSION['loggedin'])) {
                   <div class="activite-label">4 weeks</div>
                   <i class='bi bi-circle-fill activity-badge text-muted align-self-start'></i>
                   <div class="activity-content">
+<<<<<<< HEAD
+                    Another Announcement!
+=======
                     Dicta dolorem harum nulla eius. Ut quidem quidem sit quas
+>>>>>>> 19f5de8cf30f43e2af51a4a71e98d685a45c65ec
                   </div>
                 </div><!-- End activity item-->
 
