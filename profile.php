@@ -3,7 +3,7 @@
 session_start();
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
-	header('Location: index.html');
+	header('Location: studenthome.php');
 	exit;
 }
 $DATABASE_HOST = 'localhost';
@@ -62,7 +62,7 @@ $stmt->close();
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="studenthome.php" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
         <span class="d-none d-lg-block">campusCall</span>
       </a>
@@ -292,17 +292,24 @@ $stmt->close();
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.html">
+        <a class="nav-link collapsed" href="studenthome.php">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="tables-general.html">
+          <i class="bi bi-grid"></i>
+          <span>Courses</span>
+        </a>
+      </li><!-- End Courses Nav -->
+
 
     </ul>
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.html">
+        <a class="nav-link collapsed" href="studenthome.php">
           <i class="bi bi-grid"></i>
           <span>Calendar</span>
         </a>
@@ -312,7 +319,7 @@ $stmt->close();
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.html">
+        <a class="nav-link collapsed" href="studenthome.php">
           <i class="bi bi-grid"></i>
           <span>Announcements </span>
         </a>
@@ -322,7 +329,7 @@ $stmt->close();
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.html">
+        <a class="nav-link collapsed" href="studenthome.php">
           <i class="bi bi-grid"></i>
           <span>Communication</span>
         </a>
@@ -330,13 +337,6 @@ $stmt->close();
 
     </ul>
     <ul class="sidebar-nav" id="sidebar-nav">
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="tables-general.html">
-          <i class="bi bi-grid"></i>
-          <span>Courses</span>
-        </a>
-      </li><!-- End Courses Nav -->
 
       <li class="nav-heading">Pages</li>
 
@@ -371,7 +371,7 @@ $stmt->close();
       <h1>Profile</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="studenthome.php">Home</a></li>
           <li class="breadcrumb-item">Users</li>
           <li class="breadcrumb-item active">Profile</li>
         </ol>

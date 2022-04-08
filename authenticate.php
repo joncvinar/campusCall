@@ -2,9 +2,9 @@
 session_start();
 // Change this to your connection info.
 $DATABASE_HOST = 'localhost';
-$DATABASE_USER = 'cvinarj1_cvinarj1';
-$DATABASE_PASS = 'CSIT355-02';
-$DATABASE_NAME = 'cvinarj1_campusCall';
+$DATABASE_USER = 'root';
+$DATABASE_PASS = '';
+$DATABASE_NAME = 'phplogin';
 // Try and connect using the info above.
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 if ( mysqli_connect_errno() ) {
@@ -36,21 +36,22 @@ if ($stmt = $con->prepare('SELECT id, usertype , password FROM accounts WHERE us
             $_SESSION['name'] = $_POST['username'];
             $_SESSION['id'] = $id;
             $_SESSION['usertype']= $usertype;
-            if($usertype == 1){
+            if($usertype == "teacher"){
                 header('Location: teacherhome.php');
 
             }
-            elseif($usertype == 2 ){
+            elseif($usertype == "student" ){
                 header('Location: studenthome.php');
             }
 
         } else {
             // Incorrect password
-            echo 'Incorrect username and/or password!';
+            header("location:index.php?msg=failed");
+            
         }
     } else {
         // Incorrect username
-        echo 'Incorrect username and/or password!';
+        header("location:index.php?msg=failed");
     }
 
 	$stmt->close();

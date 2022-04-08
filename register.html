@@ -39,7 +39,7 @@
             <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
 
               <div class="d-flex justify-content-center py-4">
-                <a href="index.html" class="logo d-flex align-items-center w-auto">
+                <a href="index.php" class="logo d-flex align-items-center w-auto">
                   <img src="assets/img/logo.png" alt="">
                   <span class="d-none d-lg-block">CampusCall</span>
                 </a>
@@ -56,35 +56,46 @@
 
                   <form class="row g-3 needs-validation" novalidate action="register.php" method="post" autocomplete="off">
                     <div class="col-12">
-                      <label for="yourName" class="form-label">Your Name</label>
-                      <input type="text" name="name" class="form-control" id="yourName" required>
-                      <div class="invalid-feedback">Please, enter your name!</div>
-                    </div>
-
-                    <div class="col-12">
                       <label for="yourEmail" class="form-label">Your Email</label>
-                      <input type="email" name="email" placeholder="Email" class="form-control" pattern="[a-z0-9._%+-]+@montclair.edu" id="email" required>
+                      <input type="email" name="email" placeholder="@montclair.edu" class="form-control" pattern="[a-z0-9._%+-]+@montclair.edu" id="email" required>
                       <div class="invalid-feedback">Please enter a valid Email adddress!</div>
                     </div>
 
                     <div class="col-12">
                       <label for="yourUsername" class="form-label">Username</label>
                       <div class="input-group has-validation">
-                        <span class="input-group-text" id="inputGroupPrepend">@</span>
                         <input type="text" name="username" placeholder="Username" id="username" class="form-control"  required>
                         <div class="invalid-feedback">Please choose a username.</div>
                       </div>
                     </div>
 
                     <div class="col-12">
-                      <label for="yourPassword" class="form-label">Password</label>
-                      <input type="password" name="password" placeholder="Password" id="password" class="form-control" required>
-                      <div class="invalid-feedback">Please enter your password!</div>
+                      <label for="yourPassword" class="form-label">Password (8 characters minimum)</label>
+                      <div class="input-group has-validation">
+                        <input type="password" name="password" placeholder="Password " id="password" minlength="8" class="form-control" required>
+                        <div class="input-group-text">
+                            <input type="checkbox" aria-label="Show password" id = "togglePassword">
+                        </div>
+
+                        <div class="invalid-feedback">Please enter your password!</div>
+                      </div>
+                  
                     </div>
                     <div class="col-12">
-                      <label for="yourusertype" class="form-label">Type of User</label>
-                      <input type = "number" name="usertype" placeholder="Usertype" id="usertype" class="form-control" required>
-                      <div class="invalid-feedback">Please Enter 1 for Teacher and 2 for Students</div>
+                      <label for="yourUsername" class="form-label">Confirm Password</label>
+                      <div class="input-group has-validation">
+                        <input type="password"  placeholder="Confirm Password" id="txtConfirmPassword" class="form-control"  required>
+                        <div class="invalid-feedback">Please confrim the password.</div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <label for="yourusertype" class="form-label">Type of User </label>
+                      <select  name="usertype" placeholder="Usertype" id="usertype" class="form-control" required>
+                        <option value="" disabled selected hidden>Choose the type of user</option>
+                        <option value="student">student</option>
+                        <option value="teacher">teacher</option>
+                       </select>
+                      <div class="invalid-feedback">Please Enter if you are a Teacher or a Students</div>
                     </div>
 
                     <div class="col-12">
@@ -95,13 +106,36 @@
                       </div>
                     </div>
                     <div class="col-12">
-                      <button class="btn btn-primary w-100" type="submit">Create Account</button>
+                      <button class="btn btn-primary w-100" type="submit" >Create Account</button>
                     </div>
                     <div class="col-12">
-                      <p class="small mb-0">Already have an account? <a href="index.html">Log in</a></p>
+                      <p class="small mb-0">Already have an account? <a href="index.php">Log in</a></p>
                     </div>
                   </form>
-
+                  <script>
+                    const togglePassword = document.querySelector("#togglePassword");
+                    const password = document.querySelector("#password");
+            
+                    togglePassword.addEventListener("click", function () {
+                        // toggle the type attribute
+                        const type = password.getAttribute("type") === "password" ? "text" : "password";
+                        password.setAttribute("type", type);
+                        
+                        // toggle the icon
+                        this.classList.toggle();
+                    });
+                  </script>
+                  <script type="text/javascript">
+                      function Validate() {
+                          var password = document.getElementById("password").value;
+                          var confirmPassword = document.getElementById("txtConfirmPassword").value;
+                          if (password != confirmPassword) {
+                              alert("Passwords do not match.");
+                              return false;
+                          }
+                          return true;
+                      }
+                  </script>
                 </div>
               </div>
             </div>

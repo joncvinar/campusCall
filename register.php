@@ -1,9 +1,9 @@
 <?php
 // Change this to your connection info.
 $DATABASE_HOST = 'localhost';
-$DATABASE_USER = 'cvinarj1_cvinarj1';
-$DATABASE_PASS = 'CSIT355-02';
-$DATABASE_NAME = 'cvinarj1_campusCall';
+$DATABASE_USER = 'root';
+$DATABASE_PASS = '';
+$DATABASE_NAME = 'phplogin';
 // Try and connect using the info above.
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 if (mysqli_connect_errno()) {
@@ -48,7 +48,8 @@ if ($stmt = $con->prepare('INSERT INTO accounts (username, password, email, user
 	$password = $_POST['password'];
 	$stmt->bind_param('ssss', $_POST['username'], $password, $_POST['email'], $_POST['usertype']);
 	$stmt->execute();
-	echo 'You have successfully registered, you can now login!';
+	header('Location: index.php');
+
 } else {
 	// Something is wrong with the sql statement, check to make sure accounts table exists with all 3 fields.
 	echo 'Could not prepare statement!';
