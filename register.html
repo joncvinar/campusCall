@@ -81,13 +81,7 @@
                       </div>
                   
                     </div>
-                    <div class="col-12">
-                      <label for="yourUsername" class="form-label">Confirm Password</label>
-                      <div class="input-group has-validation">
-                        <input type="password"  placeholder="Confirm Password" id="txtConfirmPassword" class="form-control"  required>
-                        <div class="invalid-feedback">Please confrim the password.</div>
-                      </div>
-                    </div>
+                    
                     <div class="col-12">
                       <label for="yourusertype" class="form-label">Type of User </label>
                       <select  name="usertype" placeholder="Usertype" id="usertype" class="form-control" required>
@@ -125,18 +119,7 @@
                         this.classList.toggle();
                     });
                   </script>
-                  <script type="text/javascript">
-                      function Validate() {
-                          var password = document.getElementById("password").value;
-                          var confirmPassword = document.getElementById("txtConfirmPassword").value;
-                          if (password != confirmPassword) {
-                              alert("Passwords do not match.");
-                              return false;
-                          }
-                          return true;
-                      }
-                  </script>
-                </div>
+                  </div>
               </div>
             </div>
           </div>

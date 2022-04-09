@@ -24,7 +24,8 @@ $mysqli->connect_error);
 }
 
 // SQL query to select data from database
-$sql = "SELECT * FROM `allthecourses` WHERE Teacherid = 33";
+$idpart = $_SESSION['id'];
+$sql = "SELECT * FROM `allthecourses` WHERE Teacherid = $idpart";
 $result = $mysqli->query($sql);
 $mysqli->close(); 
 ?>
@@ -442,29 +443,20 @@ $mysqli->close();
 </div><!-- End Page Title -->
 
 <section>
-        <h1>GeeksForGeeks</h1>
-        <!-- TABLE CONSTRUCTION-->
-        <table>
-            <tr>
-                <th>GFG UserHandle</th>
-                <th>Practice Problems</th>
-                <th>Coding Score</th>
-                <th>GFG Articles</th>
-            </tr>
             <!-- PHP CODE TO FETCH DATA FROM ROWS-->
             <?php   // LOOP TILL END OF DATA 
               $count = 0;
-              while($rows=$result->fetch_assoc())
+              while($rows=$result->fetch_assoc()&& $count != 0)
               {$count = 1 + $count
              ?>
             <tr>
                 <!--FETCHING DATA FROM EACH 
                     ROW OF EVERY COLUMN-->
                 
-                <td><?php $newarr[$count]=$rows['Coursename'];?></td>
-                <td><?php echo $rows['Courseid'];?></td>
-                <td><?php echo $rows['Teacherid'];?></td>
-                <td><?php echo $rows['Semester'];?></td>
+                <td><?php $coursename[$count]=$rows['Coursename'];?></td>
+                <td><?php $courseid[$count]=$rows['Courseid'];?></td>
+                <td><?php $teacherid[$count]= $rows['Teacherid'];?></td>
+                <td><?php $semester[$count]= $rows['Semester'];?></td>
             </tr>
             <?php
                 }
@@ -507,116 +499,48 @@ $mysqli->close();
             </div>
           </div><!-- End Recent Activity -->
 
-    <div class="col-lg-6">
-        
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title"><?=$newarr[2]?></h5>
-          <!-- Default Table -->
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">CSIT_415</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Spring 2022 <i class="bi bi-megaphone"> <i class= "bi bi-bell"></i> </i></td>
+    
+    <?php   // LOOP TILL END OF DATA 
+              $count = 0;
+              while($count < count($coursename))
+              {$count = 1 + $count
+    ?>
+    <div class="col-lg-6  ">
 
-              </tr>
+      <div class="row mr-auto p-2 ">
 
-            </tbody>
-          </table>
-          <!-- End Default Table Example -->
-        </div>
-      </div>
-    </div>
+        <div class="card">
+          <div class="card-body ">
+            <h5 class="card-title"><?=$coursename[$count]?></h5>
+            <!-- Default Table -->
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">CSIT_<?=$courseid[$count]?></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><?=$semester[$count]?> <i class="bi bi-megaphone"> <i class= "bi bi-bell"></i> </i></td>
 
-        <div class="col-lg-6">
+                </tr>
 
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Computer Network</h5>
-
-              <!-- Default Table -->
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">CSIT_411</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Spring 2022 <i class="bi bi-megaphone"> <i class= "bi bi-bell"></i> </i></td>
-
-                  </tr>
-
-                </tbody>
-              </table>
-              <!-- End Default Table Example -->
+              </tbody>
+            </table>
+            <!-- End Default Table Example -->
             </div>
+          </div><!-- End Right side columns -->
           </div>
+
         </div>
-      </div>
-
-          <div class="row">
-            <div class="col-lg-6">
-
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Systems Programming</h5>
-
-                  <!-- Default Table -->
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">CSIT_436</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Spring 2022 <i class="bi bi-megaphone"> <i class= "bi bi-bell"></i> </i></td>
-
-                      </tr>
-
-                    </tbody>
-                  </table>
-                  <!-- End Default Table Example -->
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Calculus III</h5>
-
-                  <!-- Default Table -->
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">MATH_319</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Spring 2022 <i class="bi bi-megaphone"> <i class= "bi bi-bell"></i> </i></td>
-
-                      </tr>
-
-                    </tbody>
-                  </table>
-                  <!-- End Default Table Example -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!-- End Right side columns -->
-
+      <?php
+                }
+    ?>
       </div>
     </section>
 
   </main><!-- End #main -->
+      </div>
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
