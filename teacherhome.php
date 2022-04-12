@@ -446,7 +446,7 @@ $mysqli->close();
             <!-- PHP CODE TO FETCH DATA FROM ROWS-->
             <?php   // LOOP TILL END OF DATA 
               $count = 0;
-              while($rows=$result->fetch_assoc()&& $count != 0)
+              while($rows=$result->fetch_assoc())
               {$count = 1 + $count
              ?>
             <tr>
@@ -503,7 +503,7 @@ $mysqli->close();
     <?php   // LOOP TILL END OF DATA 
               $count = 0;
               while($count < count($coursename))
-              {$count = 1 + $count
+              { $count = 1 + $count
     ?>
     <div class="col-lg-6  ">
 
