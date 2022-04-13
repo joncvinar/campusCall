@@ -22,6 +22,8 @@ $stmt->execute();
 $stmt->bind_result($password, $email);
 $stmt->fetch();
 $stmt->close();
+
+
 ?>
 
 <!DOCTYPE html>
