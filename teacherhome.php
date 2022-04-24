@@ -311,7 +311,7 @@ $mysqli->close();
   <ul class="sidebar-nav" id="sidebar-nav">
 
     <li class="nav-item">
-      <a class="nav-link collapsed" href="tables-general.html">
+      <a class="nav-link collapsed" href="tables-general.php">
         <i class="bi bi-grid"></i>
         <span>Courses</span>
       </a>
@@ -524,55 +524,6 @@ $mysqli->close();
                   +
                   </button>
 
-                  <!-- Modal -->
-                  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLongTitle">Create a Course</h5>
-                          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <form class="row g-3 needs-validation" novalidate action="courseCreation.php" method="post" autocomplete="off">
-                              <div class="col-12">
-                                <label for="teacherid" class="form-label">Your ID is: <?=$_SESSION['id']?></label>
-                              </div>  
-                              <div class="col-12">
-                                <label for="coursename" class="form-label">Course Title</label>
-                                <input type="text" name="coursename" class="form-control" id="coursename" required>
-                                <div class="invalid-feedback">Please, the courses title</div>
-                              </div>
-                              <div class="col-12">
-                                <label for="courseid" class="form-label">Course ID</label>
-                                <input type="text" name="courseid" class="form-control" id="courseid" required>
-                                <div class="invalid-feedback">Please, the courses id</div>
-                              </div>
-                              <div class="col-12">
-                              <label for="coursetime" class="form-label">Time</label>
-                              <select  name="coursetime" placeholder="coursetime" id="coursetime" class="form-control" required>
-                                <option value="" disabled selected hidden>Choose the semester the course will be held in</option>
-                                <option value="Spring2022">Spring 2022</option>
-                                <option value="Summer12022">Summer 1 2022</option>
-                                <option value="Summer22022">Summer 2 2022</option>
-                                <option value="Fall2022">Fall 2022</option>
-                              </select>
-                              
-                              <div class="col-12">
-                                <label class="form-label"></label>
-                              </div> 
-
-                            
-                            <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Close</button>
-                          
-                            <div class="col-12">
-                                      <button class="btn btn-primary w-100" type="submit">Create Course</button>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </tr>
               </thead>
               <tbody>
