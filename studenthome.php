@@ -88,8 +88,8 @@ if (!isset($_SESSION['loggedin'])) {
             <li class="notification-item">
               <i class="bi bi-exclamation-circle text-warning"></i>
               <div>
-                <h4>This announcement is new</h4>
-                <p>A dynamically timed announcement</p>
+                <h4>Lorem Ipsum</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
                 <p>30 min. ago</p>
               </div>
             </li>
@@ -102,7 +102,7 @@ if (!isset($_SESSION['loggedin'])) {
               <i class="bi bi-x-circle text-danger"></i>
               <div>
                 <h4>STUDENT PAGE</h4>
-                <p>A dynamically timed announcement</p>
+                <p>Quae dolorem earum veritatis oditseno</p>
                 <p>1 hr. ago</p>
               </div>
             </li>
@@ -114,8 +114,8 @@ if (!isset($_SESSION['loggedin'])) {
             <li class="notification-item">
               <i class="bi bi-check-circle text-success"></i>
               <div>
-                <h4>Green announcement</h4>
-                <p>A dynamically timed announcement</p>
+                <h4>Sit rerum fuga</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
                 <p>2 hrs. ago</p>
               </div>
             </li>
@@ -127,8 +127,8 @@ if (!isset($_SESSION['loggedin'])) {
             <li class="notification-item">
               <i class="bi bi-info-circle text-primary"></i>
               <div>
-                <h4>Information announcement</h4>
-                <p>A dynamically timed announcement</p>
+                <h4>Dicta reprehenderit</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
                 <p>4 hrs. ago</p>
               </div>
             </li>

@@ -16,9 +16,9 @@ if (!isset($_SESSION['loggedin'])) {
 $courseCreation = "INSERT INTO `allthecourses` (`Coursename`, `Courseid`, `Teacherid`, `Semester`) VALUES (?, ?, ?, ?)";
 // sql to create table
 $tableCreation = "CREATE TABLE $name (
-studentname INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-studentsid VARCHAR(30) NOT NULL,
-stduentemail VARCHAR(30) NOT NULL,
+studentid INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+studentsname VARCHAR(30) NOT NULL,
+studentemail VARCHAR(30) NOT NULL,
 reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
 $stmt1 = $con->prepare($tableCreation); 

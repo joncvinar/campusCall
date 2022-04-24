@@ -514,15 +514,12 @@ $mysqli->close();
 
         <div class="card">
           <div class="card-body ">
-            <h5 class="card-title"><?=$coursename[$count]?></h5>
+            <a class="card-title" href="tables-general.php?msg=<?=$coursename[$count]?>"><?=$coursename[$count]?></a>
             <!-- Default Table -->
             <table class="table">
               <thead>
                 <tr>
                   <th scope="col">CSIT_<?=$courseid[$count]?></th> <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
-                  +
-                  </button>
 
                 </tr>
               </thead>

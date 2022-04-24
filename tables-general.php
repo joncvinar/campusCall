@@ -16,7 +16,7 @@ $DATABASE_NAME = 'phplogin';
 error_reporting(0);
 // Try and connect using the info above.
 $mysqli = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
-
+$theone = $_GET["msg"];
 
 // Checking for connections
 if ($mysqli->connect_error) {
@@ -26,8 +26,12 @@ $mysqli->connect_error);
 }
 
 // SQL query to select data from database
-$sql = "SELECT * FROM `accounts`  WHERE usertype = 'student' ";
+$sql = "SELECT * FROM $theone   ";
 $result = $mysqli->query($sql);
+$mysqli->close(); 
+$mysqli = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+$sql1 = "SELECT * FROM `accounts`  WHERE usertype = 'student' ";
+$result1 = $mysqli->query($sql1);
 $mysqli->close(); 
 ?>
 <!DOCTYPE html>
@@ -72,12 +76,13 @@ $mysqli->close();
 <body>
 
   <!-- ======= Header ======= -->
+  <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="studenthome.php" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
-        <span class="d-none d-lg-block">NiceAdmin</span>
+        <span class="d-none d-lg-block">campusCall</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -130,7 +135,7 @@ $mysqli->close();
             <li class="notification-item">
               <i class="bi bi-x-circle text-danger"></i>
               <div>
-                <h4>Atque rerum nesciunt</h4>
+                <h4>STUDENT PAGE</h4>
                 <p>Quae dolorem earum veritatis oditseno</p>
                 <p>1 hr. ago</p>
               </div>
@@ -194,7 +199,7 @@ $mysqli->close();
                 <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
                 <div>
                   <h4>Maria Hudson</h4>
-                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>Undecided text</p>
                   <p>4 hrs. ago</p>
                 </div>
               </a>
@@ -208,7 +213,7 @@ $mysqli->close();
                 <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
                 <div>
                   <h4>Anna Nelson</h4>
-                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>Misc. Text</p>
                   <p>6 hrs. ago</p>
                 </div>
               </a>
@@ -222,7 +227,7 @@ $mysqli->close();
                 <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
                 <div>
                   <h4>David Muldon</h4>
-                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p> Misc. Text</p>
                   <p>8 hrs. ago</p>
                 </div>
               </a>
@@ -243,20 +248,19 @@ $mysqli->close();
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+            <span class="d-none d-md-block dropdown-toggle ps-2"><?=$_SESSION['name']?></span>
           </a><!-- End Profile Iamge Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
-              <h6>Kevin Anderson</h6>
-              <span>Web Designer</span>
+              <h6><?=$_SESSION['name']?></h6>
             </li>
             <li>
               <hr class="dropdown-divider">
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <a class="dropdown-item d-flex align-items-center" href="profile.php">
                 <i class="bi bi-person"></i>
                 <span>My Profile</span>
               </a>
@@ -266,7 +270,7 @@ $mysqli->close();
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <a class="dropdown-item d-flex align-items-center" href="profile.php">
                 <i class="bi bi-gear"></i>
                 <span>Account Settings</span>
               </a>
@@ -286,9 +290,9 @@ $mysqli->close();
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
+              <a class="dropdown-item d-flex align-items-center" href="logout.php">
                 <i class="bi bi-box-arrow-right"></i>
-                <span>Sign Out</span>
+                <span>Sign Out</span >
               </a>
             </li>
 
@@ -310,10 +314,30 @@ $mysqli->close();
                 <!--FETCHING DATA FROM EACH 
                     ROW OF EVERY COLUMN-->
                 
-                <td><?php $username[$count]=$rows['username'];?></td>
-                <td><?php $studentid[$count]=$rows['id'];?></td>
-                <td><?php $studentemail[$count]= $rows['email'];?></td>
-                <td><?php $usertype[$count]= $rows['usertype'];?></td>
+                <td><?php $username[$count]=$rows['studentsname'];?></td>
+                <td><?php $studentid[$count]=$rows['studentid'];?></td>
+                <td><?php $studentemail[$count]= $rows['studentemail'];?></td>
+            </tr>
+
+            <?php
+                }
+             ?>
+        </table>
+</section>
+<section>
+            <!-- PHP CODE TO FETCH DATA FROM ROWS-->
+            <?php   // LOOP TILL END OF DATA 
+              $count = 0;
+              while($rows=$result1->fetch_assoc())
+              {$count = 1 + $count
+             ?>
+            <tr>
+                <!--FETCHING DATA FROM EACH 
+                    ROW OF EVERY COLUMN-->
+                
+                <td><?php $username1[$count]=$rows['username'];?></td>
+                <td><?php $studentid1[$count]=$rows['id'];?></td>
+                <td><?php $studentemail1[$count]= $rows['email'];?></td>
             </tr>
 
             <?php
@@ -327,7 +351,7 @@ $mysqli->close();
   <ul class="sidebar-nav" id="sidebar-nav">
 
     <li class="nav-item">
-      <a class="nav-link " href="index.html">
+      <a class="nav-link " href="teacherhome.php">
         <i class="bi bi-grid"></i>
         <span>Dashboard</span>
       </a>
@@ -392,22 +416,123 @@ $mysqli->close();
 
           <div class="card">
             <div class="card-body">
+              <h5 class="card-title"><?=$theone?></h5>
               <h5 class="card-title">Class Roster</h5>
+              <input type="button" class="btn btn-primary w-10" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" id="slide_start_button" value="Add Student">
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Add students</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                      <form class="row g-3 needs-validation" novalidate action="addstudent.php" method="post" autocomplete="off">
+                      <table class="table datatable">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Add</th>
+                                  <th scope="col">Name</th>
+                                  <th scope="col">Email</th>
+                                  <th scope="col">ID</th>
+                                </tr>
+                              </thead>
 
-              <input type="button" class="btn btn-primary w-10" id="slide_start_button" value="Add Student">
-              <input type="button" class="btn btn-primary w-10" id="slide_stop_button"  value="Remove Student">
+                              <tbody>
+                              <?php   // LOOP TILL END OF DATA 
+                            $count = 0;
+                            while($count < count($username1))
+                            { $count = 1 + $count;
 
-              <p>Add lightweight datatables to your project with using the <a href="https://github.com/fiduswriter/Simple-DataTables" target="_blank">Simple DataTables</a> library. Just add <code>.datatable</code> class name to any table you wish to conver to a datatable</p>
+                              ?>
+                              <tr>
+                                  <th scope="row"> <div class="col-12"><div class="form-check"> <input class="form-check-input" type="checkbox" name="remember" value="true" id="rememberMe">
+                                    </div></th>
+                                  <td><?=$username1[$count]?> </td> 
+                                  <td><?=$studentemail1[$count]?></td>
+                                  <td><?=$studentid1[$count]?></td>
+                                </tr>
+                                <?php
+                              }
+                  ?>
+                              </tbody>
+
+                            </table>
+                          <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Close</button>
+                        
+                          <div class="col-12">
+                                    <button class="btn btn-primary w-100" type="submit">Add Student</button>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <input type="button" class="btn btn-primary w-10" data-bs-toggle="modal" data-bs-target="#exampleModalCenter1" id="slide_start_button" value="Remove Student">
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Remove students</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                      <form class="row g-3 needs-validation" novalidate action="Removestudent.php" method="post" autocomplete="off">
+                      <table class="table datatable">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Remove</th>
+                                  <th scope="col">Name</th>
+                                  <th scope="col">Email</th>
+                                  <th scope="col">ID</th>
+                                </tr>
+                              </thead>
+
+                              <tbody>
+                              <?php   // LOOP TILL END OF DATA 
+                            $count = 0;
+                            while($count < count($username))
+                            { $count = 1 + $count;
+
+                              ?>
+                              <tr>
+                                  <th scope="row"> <div class="col-12"><div class="form-check"> <input class="form-check-input" type="checkbox" name="remember" value="true" id="rememberMe">
+                                    </div></th>
+                                  <td><?=$username[$count]?> </td> 
+                                  <td><?=$studentemail[$count]?></td>
+                                  <td><?=$studentid[$count]?></td>
+                                </tr>
+                                <?php
+                              }
+                  ?>
+                              </tbody>
+
+                            </table>
+                          <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Close</button>
+                        
+                          <div class="col-12">
+                                    <button class="btn btn-primary w-100" type="submit">Remove Student</button>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
 
               <!-- Table with stripped rows -->
               <table class="table datatable">
                 <thead>
                   <tr>
-                    <th scope="col">Add/Remove</th>
                     <th scope="col">Name</th>
                     <th scope="col">Email</th>
-                    <th scope="col">Age</th>
-                    <th scope="col">Start Date</th>
+                    <th scope="col">ID</th>
                   </tr>
                 </thead>
 
@@ -419,16 +544,14 @@ $mysqli->close();
 
                 ?>
                 <tr>
-                    <th scope="row"> <div class="col-12"><div class="form-check"> <input class="form-check-input" type="checkbox" name="remember" value="true" id="rememberMe">
-                      </div></th>
+
                     <td><?=$username[$count]?> </td>
                     <td><?=$studentemail[$count]?></td>
                     <td><?=$studentid[$count]?></td>
-                    <td><?=$usertype[$count]?></td>
                   </tr>
                   <?php
                 }
-    ?>
+                  ?>
                 </tbody>
 
               </table>
